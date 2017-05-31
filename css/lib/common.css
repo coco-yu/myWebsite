@@ -1,0 +1,28 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear::-ms-ticks-after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gradient_bac {
+  background: -webkit-linear-gradient(top, #fff, #eee);
+  background: -moz-linear-gradient(top, #fff, #eee);
+  filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#ffffff, endColorstr=#eeeeee)";/*IE<9>*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#ffffff, endColorstr=#eeeeee)";/*IE8+*/   /*ie*/
+  background: -o-linear-gradient(top, #fff, #eee);  /*opera*/
+  background: linear-gradient(top, #fff, #eee); /*为以后浏览器升级识别 linear-gradient做准备*/
+  *background: #eee;  /*使用hack 为不同版本的浏览器定制编写不同的CSS效果*/
+  _background: #eee;
+}
